@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lq9869.github.io/"/>
-  <updated>2017-05-24T10:19:34.000Z</updated>
+  <updated>2017-05-24T10:22:17.000Z</updated>
   <id>https://lq9869.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://lq9869.github.io/2017/05/24/Swift01/"/>
     <id>https://lq9869.github.io/2017/05/24/Swift01/</id>
     <published>2017-05-24T10:17:16.000Z</published>
-    <updated>2017-05-24T10:19:34.000Z</updated>
+    <updated>2017-05-24T10:22:17.000Z</updated>
     
-    <content type="html"><![CDATA[<p>通常说，编程语言教程中的第一个程序应该在屏幕上打印<code>“Hello, world”。</code>在Swift中，可以勇一行代码实现：<br><code>print(&quot;Hello, world!&quot;)</code><br><strong>1.  常量和变量</strong><br>常量的值一旦设定就不能改变，而变量的值可以随意更 改。<br> <strong>1. 1 声明常量和变量</strong><br> 用 let 来声明常量，用 var 来声明变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let a = 10 //int类型的常量</div><div class="line">var b = 5  //int类型的变量</div><div class="line">let isFirst = true  //bool类型</div><div class="line">let isSecond = false </div><div class="line">var x = 0.0, y = 0.0, z = 0.0 //在一行中声明多个常量或者多个变量，用逗号隔开</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>通常说，编程语言教程中的第一个程序应该在屏幕上打印<code>“Hello, world”。</code>在Swift中，可以勇一行代码实现：<br><code>print(&quot;Hello, world!&quot;)</code><br><strong>1.  常量和变量</strong><br>常量的值一旦设定就不能改变，而变量的值可以随意更 改。<br> <strong>1. 1 声明常量和变量</strong><br> 用 let 来声明常量，用 var 来声明变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let a = 10 //int类型的常量</div><div class="line">var b = 5  //int类型的变量</div><div class="line">let isFirst = true  //bool类型</div><div class="line">let isSecond = false </div><div class="line">var x = 0.0, y = 0.0, z = 0.0 //在一行中声明多个常量或者多个变量，用逗号隔开</div></pre></td></tr></table></figure></p>
 <p>初始化常量或者变量的时候如果所赋的值类型已知，就可以触发类型推断。</p>
 <p> <strong>1. 2 类型标注</strong><br> 当你声明常量或者变量的时候可以加上类型标注(type annotation)，说明常量或者变量中要存储的值的类型。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var testString: String = &quot;test string&quot;</div><div class="line">//在一行中定义多个同样类型的变量，用逗号分割，并在最后一个变量名之后添加类型标注</div><div class="line">var red, green, blue: Double</div></pre></td></tr></table></figure></p>
 <p> <strong>1.3 数值型类型转换</strong><br> 整数和浮点数的转换必须显式指定类型:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//整数和浮点数互转</div><div class="line">let a = 10</div><div class="line">let b = 15.9</div><div class="line">let c = Double(a) + b  //c等于25.9</div><div class="line">let d = Int(b)  //d等于15 会把小数点位给截取掉</div><div class="line"></div><div class="line">//字符串和Int互转</div><div class="line">var strTest = &quot;112&quot;</div><div class="line">let temp = Int(strTest) //temp是Int类型的112</div><div class="line"></div><div class="line">var strTest1 = &quot;我是字符串&quot;</div><div class="line">let temp1 = Int(strTest1) //temp1类型为可选(optionals)的Int类型，值为nil</div><div class="line">//什么是可选类型？接下来会将!</div></pre></td></tr></table></figure></p>
@@ -34,7 +34,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;通常说，编程语言教程中的第一个程序应该在屏幕上打印&lt;code&gt;“Hello, world”。&lt;/code&gt;在Swift中，可以勇一行代码实现：&lt;br&gt;&lt;code&gt;print(&amp;quot;Hello, world!&amp;quot;)&lt;/code&gt;&lt;br&gt;&lt;strong&gt;1.  常
+      &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;p&gt;通常说，编程语言教程中的第一个程序应该在屏幕上打印&lt;code&gt;“He
     
     </summary>
     
