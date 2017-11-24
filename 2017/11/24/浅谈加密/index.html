@@ -1,28 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>阿Q</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="https://lq9869.github.io/"/>
-  <updated>2017-11-24T11:23:10.000Z</updated>
-  <id>https://lq9869.github.io/</id>
-  
-  <author>
-    <name>阿Q</name>
-    
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>浅谈加密</title>
-    <link href="https://lq9869.github.io/2017/11/24/%E6%B5%85%E8%B0%88%E5%8A%A0%E5%AF%86/"/>
-    <id>https://lq9869.github.io/2017/11/24/浅谈加密/</id>
-    <published>2017-11-24T06:49:13.000Z</published>
-    <updated>2017-11-24T11:23:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>##什么是加密？</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 浅谈加密 · 阿Q</title><meta name="description" content="浅谈加密 - 阿Q"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/portrait.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://lq9869.github.io/atom.xml" title="阿Q"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/portrait.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/lq9869" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">浅谈加密</h1><div class="post-info">2017年11月24日</div><div class="post-content"><p>##什么是加密？</p>
 <blockquote>
 <p><a href="https://baike.baidu.com/item/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95" target="_blank" rel="external">数据加密</a>的基本过程就是对原来为明文的文件或数据按某种算法进行处理，使其成为不可读的一段代码，通常称为“密文”，使其只能在输入相应的密钥之后才能显示出本来内容，通过这样的途径来达到保护数据不被非法人窃取、阅读的目的。该过程的逆过程为解密，即将该编码信息转化为其原来数据的过程。</p>
 </blockquote>
@@ -119,45 +95,14 @@
 <p>隐写术：<br><img src="http://upload-images.jianshu.io/upload_images/1277106-583fe1295e60cd0b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="隐写术.jpg"></p>
 <hr>
 <p>结束</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;##什么是加密？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Swift初见</title>
-    <link href="https://lq9869.github.io/2017/01/31/Swift01/"/>
-    <id>https://lq9869.github.io/2017/01/31/Swift01/</id>
-    <published>2017-01-31T06:49:13.000Z</published>
-    <updated>2017-05-24T11:07:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>通常说，编程语言教程中的第一个程序应该在屏幕上打印<code>“Hello, world”</code>。在Swift中，可以用一行代码实现：<br><code>print(&quot;Hello, world!&quot;)</code><br><strong>1.  常量和变量</strong><br>常量的值一旦设定就不能改变，而变量的值可以随意更 改。<br> <strong>1. 1 声明常量和变量</strong><br> 用 let 来声明常量，用 var 来声明变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let a = 10 //int类型的常量</div><div class="line">var b = 5  //int类型的变量</div><div class="line">let isFirst = true  //bool类型</div><div class="line">let isSecond = false </div><div class="line">var x = 0.0, y = 0.0, z = 0.0 //在一行中声明多个常量或者多个变量，用逗号隔开</div></pre></td></tr></table></figure></p>
-<p>初始化常量或者变量的时候如果所赋的值类型已知，就可以触发类型推断。</p>
-<a id="more"></a>
-<p> <strong>1. 2 类型标注</strong><br> 当你声明常量或者变量的时候可以加上类型标注(type annotation)，说明常量或者变量中要存储的值的类型。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var testString: String = &quot;test string&quot;</div><div class="line">//在一行中定义多个同样类型的变量，用逗号分割，并在最后一个变量名之后添加类型标注</div><div class="line">var red, green, blue: Double</div></pre></td></tr></table></figure></p>
-<p> <strong>1.3 数值型类型转换</strong><br> 整数和浮点数的转换必须显式指定类型:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//整数和浮点数互转</div><div class="line">let a = 10</div><div class="line">let b = 15.9</div><div class="line">let c = Double(a) + b  //c等于25.9</div><div class="line">let d = Int(b)  //d等于15 会把小数点位给截取掉</div><div class="line"></div><div class="line">//字符串和Int互转</div><div class="line">var strTest = &quot;112&quot;</div><div class="line">let temp = Int(strTest) //temp是Int类型的112</div><div class="line"></div><div class="line">var strTest1 = &quot;我是字符串&quot;</div><div class="line">let temp1 = Int(strTest1) //temp1类型为可选(optionals)的Int类型，值为nil</div><div class="line">//什么是可选类型？接下来会将!</div></pre></td></tr></table></figure></p>
-<p><strong>1.4 类型别名</strong><br>类型别名(type aliases)就是给现有类型定义另一个名字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">typealias MYInt = Int</div><div class="line">var x: MYInt = 5</div></pre></td></tr></table></figure></p>
-<p><strong>1.5 元组</strong><br>元组(tuples)把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let ageAndName = (24, &quot;Jack&quot;)</div><div class="line">// ageAndName 的类型是 (Int, String)</div></pre></td></tr></table></figure></p>
-<p>你可以将一个元组的内容分解(decompose)成单独的常量和变量，然后你就可以正常使用它们了:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">let (age, name) = ageAndName</div><div class="line">print(&quot;the age is \(age)&quot;) //24</div><div class="line">print(&quot;the name is \(name)&quot;) //Jack</div><div class="line"></div><div class="line">//如果只需要其中一部分元组值，可以把要忽略的部分用(_)标记</div><div class="line">let (justAge, _) = ageAndName</div></pre></td></tr></table></figure></p>
-<p>除了上面的方式，我们还可以使用下标或者定义元组的时候给值添加命名:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//使用下标</div><div class="line">print(&quot;the age is \(ageAndName.0)&quot;)</div><div class="line">print(&quot;the age is \(ageAndName.1)&quot;)</div><div class="line"></div><div class="line">//定义元组的时候给元素添加命名</div><div class="line">let nameAndSex = (nameW:&quot;Jan&quot;,sex:&quot;woman&quot;)</div><div class="line">print(&quot;the name is \(nameAndSex.nameW) sex is :\(nameAndSex.sex)&quot;)</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通常说，编程语言教程中的第一个程序应该在屏幕上打印&lt;code&gt;“Hello, world”&lt;/code&gt;。在Swift中，可以用一行代码实现：&lt;br&gt;&lt;code&gt;print(&amp;quot;Hello, world!&amp;quot;)&lt;/code&gt;&lt;br&gt;&lt;strong&gt;1.  常量和变量&lt;/strong&gt;&lt;br&gt;常量的值一旦设定就不能改变，而变量的值可以随意更 改。&lt;br&gt; &lt;strong&gt;1. 1 声明常量和变量&lt;/strong&gt;&lt;br&gt; 用 let 来声明常量，用 var 来声明变量。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;let a = 10 //int类型的常量&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var b = 5  //int类型的变量&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;let isFirst = true  //bool类型&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;let isSecond = false &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var x = 0.0, y = 0.0, z = 0.0 //在一行中声明多个常量或者多个变量，用逗号隔开&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;初始化常量或者变量的时候如果所赋的值类型已知，就可以触发类型推断。&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/01/31/Swift01/" class="next">下一篇</a></div><div data-thread-key="2017/11/24/浅谈加密/" data-title="浅谈加密" data-url="https://lq9869.github.io/2017/11/24/浅谈加密/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"lu9869"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2015 - 2017 <a href="https://lq9869.github.io">阿Q</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
